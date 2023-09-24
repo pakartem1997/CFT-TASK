@@ -4,148 +4,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="index.css">
+  <title>MARVEL HEROES</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="table">
+  <div class="wrapper">
 
-      <div class="column">
-        <h3 class="column__title">
-          Супергерой
-        </h3>
-        <div class="column__item">
-          Железный человек
+    <header class="header">
+      <a class="logo" href="#">
+        MARVEL
+      </a>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="search">
+          <h2 class="search__title">
+            Найди своего супергероя по его способностям
+          </h2>
+          <div class="search__controls">
+            <button class="search__btn" onclick="search()"></button>
+            <input class="search__input" id="searchInput">
+          </div>
+          <div class="search__info" id="searchInfo">
+          </div>
         </div>
-        <div class="column__item">
-          Человек паук
+
+        <div class="table">
+
+          <div class="cell table-header">
+            Супергерой
+          </div>
+          <div class="cell table-header">
+            Полное имя
+          </div>
+          <div class="cell table-header">
+            Авторы
+          </div>
+          <div class="cell table-header">
+            Способности
+          </div>
+          <div class="cell table-header">
+            Враги
+          </div>
+
+          <div data-label="Супергерой" class="cell">
+            Железный человек
+          </div>
+          <div class="cell" data-label="Полное имя">
+            Энтони Эдвард «Тони» Старк
+          </div>
+          <div class="cell" data-label="Авторы">
+            Стэн Ли,
+            Ларри Либер,
+            Дон Хек,
+            Джек Кирби
+          </div>
+          <div class="cell" data-search="special-powers" data-label="Способности">
+            высокий интеллект,
+            обширные знания во многих технических науках,
+            широкий доступ к сверхсовременным технологиям,
+            выдающийся изобретатель и инженер,
+            киберпатическая связь с бронекостюмом,
+            мастер боевых искусств,
+            телепатическая связь со всемирной паутиной
+          </div>
+          <div class="cell" data-label="Враги">
+            Мандарин, Альтрон, А.И.М., Барон Страйкер
+          </div>
+
+          <div class="cell" data-label="Супергерой">
+            Человек паук
+          </div>
+          <div class="cell" data-label="Полное имя">
+            Питер Бенджамин Паркер
+          </div>
+          <div class="cell" data-label="Авторы">
+            Стэн Ли (сценарист),
+            Стив Дитко (художник)
+          </div>
+          <div class="cell" data-search="special-powers" data-label="Способности">
+            ускореные рефлексы,
+            сила,
+            скорость,
+            ловкость,
+            ускоренный метаболизм,
+            способность прилипать к твёрдым поверхностям,
+            «Паучье чутьё»,
+            ускоренная регенерация,
+            мастер боевых искусств,
+            высокий интеллект
+          </div>
+          <div class="cell" data-label="Враги">
+            Зелёный гоблин, Доктор Осьминог, Веном, Шокер
+          </div>
+
+          <div class="cell" data-label="Супергерой">
+            Капитан Америка
+          </div>
+          <div class="cell" data-label="Полное имя">
+            Стивен Грант Роджерс
+          </div>
+          <div class="cell" data-label="Авторы">
+            Джо Саймон, Джек Кирби
+          </div>
+          <div class="cell" data-search="special-powers" data-label="Способности">
+            сила,
+            ускоренный метаболизм,
+            выносливость,
+            мастер боевых искусств,
+            лидерские качества,
+            шпионские навыки,
+            мастерство скрытности,
+            ускоренная регенерация,
+            замедленное старение,
+            ускореные рефлексы,
+            высокая скорость
+          </div>
+          <div class="cell" data-label="Враги">
+            Красный Череп, Гидра, Шельма
+          </div>
+
+          <div class="cell" data-label="Супергерой">
+            Доктор Стрэндж
+          </div>
+          <div class="cell" data-label="Полное имя">
+            Стиивен Винсент Стрэндж
+          </div>
+          <div class="cell" data-label="Авторы">
+            Стэн Ли,
+            Стив Дитко
+          </div>
+          <div class="cell" data-search="special-powers" data-label="Способности">
+            магия,
+            высокий интеллект,
+            создание клонов,
+            неуязвимость,
+            долголетие,
+            гипноз,
+            телепортация,
+            иллюзии,
+            регенерация
+          </div>
+          <div class="cell" data-label="Враги">
+            Дормамму, Барон Мордо, Суртур, Мефисто
+          </div>
         </div>
-        <div class="column__item">
-          Капитан Америка
-        </div>
-        <div class="column__item">
-          Капитан Марвел
-        </div>
+
+        <img class="decor capitan-america" src="./img/capitan-america.png" alt="capitan-america">
+        <img class="decor iron-man" src="./img/iron-man.png" alt="iron-man">
+
       </div>
+    </main>
 
-      <div class="column">
-        <h3 class="column__title">
-          Полное имя
-        </h3>
-        <div class="column__item">
-          Энтони Эдвард «Тони» Старк
-        </div>
-        <div class="column__item">
-          Питер Бенджамин Паркер
-        </div>
-        <div class="column__item">
-          Стивен Грант Роджерс
-        </div>
-        <div class="column__item">
-          Кэрол Сьюзен Джейн Дэнверс
-        </div>
-      </div>
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a class="footer__nav-item footer__link" target="_blank" href="https://disneytermsofuse.com">Terms of Use</a>
+        <a class="footer__nav-item footer__link" target="_blank"
+          href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/">Privacy Policy</a>
+        <a class="footer__nav-item footer__link" target="_blank"
+          href="https://preferences-mgr.truste.com/?type=disneycolor&amp;affiliateId=115">Interest-Based Ads</a>
+        <a class="footer__nav-item footer__link" target="_blank"
+          href="https://www.marvel.com/corporate/license_tou">License Agreement</a>
+        <span class="footer__nav-item footer__copyright">©2023 MARVEL</span>
+      </nav>
+    </footer>
 
-      <div class="column">
-        <h3 class="column__title">
-          Авторы
-        </h3>
-        <div class="column__item">
-          Стэн Ли,
-          Ларри Либер,
-          Дон Хек,
-          Джек Кирби
-        </div>
-        <div class="column__item">
-          Стэн Ли (сценарист),
-          Стив Дитко (художник)
-        </div>
-        <div class="column__item">
-          Джо Саймон, Джек Кирби
-        </div>
-        <div class="column__item">
-          Рой Томас, Джен Колан
-        </div>
-      </div>
-
-      <div class="column">
-        <h3 class="column__title">
-          Особые силы
-        </h3>
-        <div class="column__item">
-          гениальный интеллект,
-          обширные знания во многих технических науках,
-          широкий доступ к сверхсовременным технологиям,
-          выдающийся изобретатель и инженер,
-          киберпатическая связь с бронекостюмом,
-          обширные познания в боевых искусствах,
-          телепатическая связь со всемирной паутиной
-        </div>
-        <div class="column__item">
-          сверхчеловеческие рефлексы, сила (может поднять 10 тонн), скорость, прыжки в высоту и в длину на 10 метров и
-          ловкость,
-          развит вестибулярный аппарат,
-          ускоренный метаболизм,
-          способность прилипать к твёрдым поверхностям,
-          «Паучье чутьё»,
-          ускоренное заживление ран,
-          владение боевыми искусствами,
-          гениальный интеллект (IQ - 250),
-          ночное зрение (не всегда)
-        </div>
-        <div class="column__item">
-          пик человеческих сил,
-          превосходная физическая форма,
-          ускоренный метаболизм,
-          выносливость развита до предела,
-          мастер множества боевых искусств,
-          великолепные акробатические данные,
-          превосходный тактик, стратег и полевой командир,
-          лидерские качества,
-          шпионские навыки,
-          мастерство скрытности,
-          лучший рукопашный боец мира,
-          иммунитет ко всем болезням,
-          ускоренная регенерация,
-          прочность,
-          высокий болевой порог,
-          замедленное старение,
-          рефлексы ускорены до предела,
-          высокая скорость
-        </div>
-        <div class="column__item">
-          Сверхчеловеческие сила, скорость, ловкость, рефлексы,
-          выносливость, прочность, самообеспечение, полёт, само-исцеление,
-          способность поглощать и проецировать энергию,
-          мгновенное предвидение (также известное как «Седьмое чувство»)
-        </div>
-      </div>
-
-      <div class="column">
-        <h3 class="column__title">
-          Враги
-        </h3>
-        <div class="column__item">
-          Мандарин, Альтрон, А.И.М., Барон Страйкер
-        </div>
-        <div class="column__item">
-          Зелёный гоблин, Доктор Осьминог, Веном, Шокер
-        </div>
-        <div class="column__item">
-          Красный Череп, Гидра, Шельма
-        </div>
-        <div class="column__item">
-          Скруллы, Танос, Аннигилус
-        </div>
-      </div>
-
-    </div>
   </div>
 
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

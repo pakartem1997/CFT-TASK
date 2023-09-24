@@ -1,0 +1,13 @@
+:root {
+  --colorWhite: #fff;
+  --colorBlack: #000;
+  --colorText: #222;
+  --colorSecondText: #c79797;
+  --colorBackground: #5d0406;
+  --colorSecondBackground: #b70709;
+  --colorTableHeader: #5721ec;
+  --colorCellHover: #e8ec7c;
+  --colorCell: #e7e6ec;
+  --colorSecondCell: #a8a8b9;
+  --colorMatchingText: #ca1919;
+}
