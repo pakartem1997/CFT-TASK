@@ -377,20 +377,8 @@ a {
     font-size: 18px;
   }
 
-  .cell:nth-child(10n + 1),
-  .cell:nth-child(10n + 2),
-  .cell:nth-child(10n + 3),
-  .cell:nth-child(10n + 4),
-  .cell:nth-child(10n + 5) {
+  .cell:nth-child(5n + 1) {
     background-color: var(--colorSecondCell);
-  }
-
-  .cell:nth-child(10n + 1):hover,
-  .cell:nth-child(10n + 2):hover,
-  .cell:nth-child(10n + 3):hover,
-  .cell:nth-child(10n + 4):hover,
-  .cell:nth-child(10n + 5):hover {
-    background-color: var(--colorCellHover);
   }
 
   .cell::before {
